@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--PAGE-->
+        <title>The Brewers Arms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="public/img/">
+
+        <!--CSS-->
+        <link href="public/css/main.css" rel="stylesheet" />
+
+        <!--JS-->
+        <script src="public/js/gallery.js"></script>
+        <script src="public/js/navbar.js"></script>
+
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        
+    </head>
+    <body>
+        <!------------------------------NAVBAR------------------------------>
+        <div class="navbar-collapse collapse out" id="myNavbar">
+            <a id="TBAtitle">The Brewers Arms</a>
+            <a id="line">|</a>
+            <a id="homeButton" onclick="hide()" href="#home">Home</a>
+            <a id="item" onclick="hide()" href="#menu">Menus</a>
+            <a id="item" onclick="hide()" href="#gallery">Gallery</a>
+            <a id="item" onclick="hide()" href="#contactus">Contact</a>
+            <a id="bars_icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>        
+            <script>
+                function hide() {
+                    console.log("HIDE");
+                    document.getElementById('bars_icon').dispatchEvent(new MouseEvent("click"));
+                }
+            </script>
+        </div>
+
+        <!------------------------------CONTENT------------------------------>
+        <div class="content">
+            <!---------------HOME--------------->
+            <section id="homeSection" class="section">
+                <div class="homeContent">
+                    <h1 class="homeTitle">Welcome to<br>The Brewers Arms</h1>
+                    <p class="location">Brightlingsea</p>
+                    <p class="description">Friendly family run pub offering traditional dishes using the finest and freshest ingredients available ample parking available.</p>
+                    <a class="browseMenu" href="#menu">Browse Menus</a>
+                </div>
+            </section>
+
+            <!---------------MENU--------------->
+            <section id="menuSection" class="section">
+                <div class="menuContent">
+                    <button onclick='window.open("public/img/Menus/Starter Menu.png", "_blank"); return false;'>Starter Menu</button>
+                    <br>
+                    <button onclick='window.open("public/img/Menus/Main Menu.png", "_blank"); return false;'>Main Menu</button>
+                    <br>
+                    <button onclick='window.open("public/img/Menus/Sunday Menu.png", "_blank"); return false;'>Sunday Menu</button>
+                    <br>
+                    <button onclick='window.open("public/img/Menus/Vegetarian Menu.png", "_blank"); return false;'>Vegetarian Menu</button>
+                    <br>
+                    <button onclick='window.open("public/img/Menus/Kids Menu.png", "_blank"); return false;'>Kids Menu</button>
+                    <br>
+                    <button onclick='window.open("public/img/Menus/Dessert Menu.png", "_blank"); return false;'>Dessert Menu</button>
+                    <br>
+                </div>
+            </section>
+
+            <!---------------GALLERY--------------->
+            <section id="gallerySection" class="section">
+                <div class="galleryContent">
+                    <br>
+                    <div class="slideshow-container">
+                        <div id="slide1" class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="public/img/Gallery/1.png" style="width:100%">
+                        <!--<div class="text">Caption Text</div>-->
+                        </div>
+                        
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="public/img/Gallery/2.png" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="public/img/Gallery/3.png" style="width:100%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>   
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    <br>
+                </div>
+            </section>
+
+            <!---------------CONTACT--------------->
+            <section id="contactusSection" class="section">
+                <div class="wrapper">
+                    <div id="infoSide" class="contactSections">
+                        <div class="detailsSection">
+                            <br>
+                            <h1 class="contactHeading">Contact Details</h1>
+                            <br>
+                            <h2 class="contactTypes">Address</h2>
+                            <p class="contactDetails">1 Victoria Pl, Brightlingsea, Colchester CO7 0BX</p>
+                            <br>
+                            <h2 class="contactTypes">Phone</h2>
+                            <p class="contactDetails">01206 305608</p>
+                            <br>
+                            <h2 class="contactTypes">Email</h2>
+                            <p class="contactDetails">thebrewersarms73@yahoo.com</p>
+                            <br>
+                        </div>
+                        
+                        <div class="mapSection">
+                            <h2 class="contactHeading">Find Us</h2>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.753055943494!2d1.0237177153567594!3d51.81067267968612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d911a3fe4c3139%3A0xda2263ffed1060c6!2sThe%20Brewers%20Arms%2C%201%20Victoria%20Pl%2C%20Brightlingsea%2C%20Colchester%20CO7%200BX!5e0!3m2!1sen!2suk!4v1593095671544!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+            </section>
+
+            <!---------------FORM--------------->
+            <section id="formSection" class="section">
+                <div id="formSide" class="contactSections">
+                    <form data-netlify="true" method='POST' action='contact-form-proc.php' name='contactform' id='contactform'>
+                        <br>
+                        <h1 class="formHeader">Contact Us</h1>
+                        <br>
+                        <input type="hidden" name="form-name" value="contactform" />
+                        <p>
+                            <label class="formLabels">First Name:</label>
+                            <input type='text' name='firstname' class="standardInput" placeholder="Your First Name.."/>
+                        </p>
+                        <p>
+                            <label class="formLabels">Surname:</label>
+                            <input type='text' name='surname' class="standardInput" placeholder="Your Surname.."/>
+                        </p>
+                        <p>
+                            <label class="formLabels">Email Address:</label>
+                            <input type='text' name='email' class="standardInput" placeholder="Your Email.."/>
+                        </p>
+                        <p>
+                            <label class="formLabels">Your message to us:</label>
+                            <input type='text' name='message' class="messageInput" placeholder="Message.."/>
+                        </p>
+                        <input type='submit' name='submit' class="buttonInput" value='Submit Form'/>
+                    </form>
+                </div>
+            </div>
+            </section>
+        </div>
+    </body>
