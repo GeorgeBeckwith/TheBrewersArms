@@ -25,10 +25,11 @@
         <div class="navbar-collapse collapse out" id="myNavbar">
             <a id="TBAtitle">The Brewers Arms</a>
             <a id="line">|</a>
-            <a id="homeButton" onclick="hide()" href="#home">Home</a>
-            <a id="item" onclick="hide()" href="#menu">Menus</a>
-            <a id="item" onclick="hide()" href="#gallery">Gallery</a>
-            <a id="item" onclick="hide()" href="#contactus">Contact</a>
+            <a id="homeButton" onclick="hide()" href="#homeSection">Home</a>
+            <a id="item" onclick="hide()" href="#menuSection">Menus</a>
+            <a id="item" onclick="hide()" href="#gallerySection">Gallery</a>
+            <a id="item" onclick="hide()" href="#contactusSection">Contact</a>
+            <a id="item" onclick="hide()" href="#formSection">Form</a>
             <a id="bars_icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>        
@@ -106,35 +107,36 @@
 
             <!---------------CONTACT--------------->
             <section id="contactusSection" class="section">
-                <div class="wrapper">
-                    <div id="infoSide" class="contactSections">
-                        <div class="detailsSection">
-                            <br>
-                            <h1 class="contactHeading">Contact Details</h1>
-                            <br>
-                            <h2 class="contactTypes">Address</h2>
-                            <p class="contactDetails">1 Victoria Pl, Brightlingsea, Colchester CO7 0BX</p>
-                            <br>
-                            <h2 class="contactTypes">Phone</h2>
-                            <p class="contactDetails">01206 305608</p>
-                            <br>
-                            <h2 class="contactTypes">Email</h2>
-                            <p class="contactDetails">thebrewersarms73@yahoo.com</p>
-                            <br>
-                        </div>
-                        
-                        <div class="mapSection">
-                            <h2 class="contactHeading">Find Us</h2>
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.753055943494!2d1.0237177153567594!3d51.81067267968612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d911a3fe4c3139%3A0xda2263ffed1060c6!2sThe%20Brewers%20Arms%2C%201%20Victoria%20Pl%2C%20Brightlingsea%2C%20Colchester%20CO7%200BX!5e0!3m2!1sen!2suk!4v1593095671544!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
+                <div class="contactWrapper">
+                    <div class="detailsSection">
+                        <br>
+                        <h1 class="contactHeading">Contact Details</h1>
+                        <br>
+                        <h2 class="contactTypes">Address</h2>
+                        <p class="contactDetails">1 Victoria Pl, Brightlingsea, Colchester CO7 0BX</p>
+                        <br>
+                        <h2 class="contactTypes">Phone</h2>
+                        <p class="contactDetails">01206 305608</p>
+                        <br>
+                        <h2 class="contactTypes">Email</h2>
+                        <p class="contactDetails">thebrewersarms73@yahoo.com</p>
+                        <br>
                     </div>
+                    
+                    <div class="mapSection">
+                        <h2 class="contactHeading">Find Us</h2>
+                        <br>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.753055943494!2d1.0237177153567594!3d51.81067267968612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d911a3fe4c3139%3A0xda2263ffed1060c6!2sThe%20Brewers%20Arms%2C%201%20Victoria%20Pl%2C%20Brightlingsea%2C%20Colchester%20CO7%200BX!5e0!3m2!1sen!2suk!4v1593095671544!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <br>
+                        <br>
+                    </div>
+                </div>
             </section>
 
             <!---------------FORM--------------->
             <section id="formSection" class="section">
-                <div id="formSide" class="contactSections">
+                <div class="formWrapper">
                     <form data-netlify="true" method='POST' action='contact-form-proc.php' name='contactform' id='contactform'>
-                        <br>
                         <h1 class="formHeader">Contact Us</h1>
                         <br>
                         <input type="hidden" name="form-name" value="contactform" />
@@ -155,9 +157,9 @@
                             <input type='text' name='message' class="messageInput" placeholder="Message.."/>
                         </p>
                         <input type='submit' name='submit' class="buttonInput" value='Submit Form'/>
+                        <br>
                     </form>
                 </div>
-            </div>
             </section>
         </div>
     </body>

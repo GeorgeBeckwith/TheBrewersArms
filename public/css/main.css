@@ -393,31 +393,18 @@ img {vertical-align: middle;}
 }
 
 #contactusSection {
-    margin: 0 0 -100px 0;
+    margin: 0 0 0 0;
 }
 
-.wrapper {
-max-width: 100%;
-height: auto;
-margin: 70px 20px 0px 20px;
-text-align: center;
-background-color: white;
-opacity: 0.7;
-float: center;
-vertical-align: bottom;
-}
-
-.contactSections {
-    width: 58%;
-    height: 100%;
-    opacity: 1;
-}
-
-#infoSide {
-    display: inline-block;
-    width: 40%;
-    opacity: 1;
-    vertical-align: top;
+.contactWrapper {
+    max-width: 100%;
+    height: auto;
+    margin: 70px 20px 0px 20px;
+    text-align: center;
+    background-color: white;
+    opacity: 0.7;
+    float: center;
+    vertical-align: bottom;
 }
 
 .contactHeading {
@@ -450,15 +437,7 @@ vertical-align: bottom;
 @media (min-width:0px) {
     .map {
         width: 275px;
-        height: 200px;
-    }
-    #infoSide {
-        display: inline;
-        text-align: center;
-    }
-    #formSide {
-        display: inline;
-        float: none;
+        height: 250px;
     }
     .contactHeading {
         font-size: 20px;
@@ -487,7 +466,7 @@ vertical-align: bottom;
 @media (min-width:500px) {
     .map {
         width: 400px;
-        height: 200px;
+        height: 250px;
     }
     .contactHeading {
         font-size: 25px;
@@ -509,15 +488,8 @@ vertical-align: bottom;
 
 @media (min-width:800px) {
     .map {
-        width: 275px;
-        height: 150px;
-    }
-    #infoSide {
-        display: inline-block;
-
-    }
-    #formSide {
-        display: inline-block;
+        width: 600px;
+        height: 200px;
     }
     .contactHeading {
         font-size: 30px;
@@ -529,33 +501,33 @@ vertical-align: bottom;
     .contactDetails {
         text-align: center;
     }
-    .detailsSection {
-        float: none;
-    }
     .mapSection {
         float: none;
-    }
-    .formHeader {
-        display: inline-block;
-    }
-    .formLabels {
-        display: inline-block;
-    }
-    .standardInput {
-        display: inline-block;
-    }
-    .messageInput {
-        display: inline-block;
-    }
-    .buttonInput {
-        display: inline-block;
     }
 }
 
 /*-----FORM-----*/
-#formSide {
-    display: inline-block;
-    opacity: 1;
+.content .section:nth-child(5) {
+    background-image: url("../img/Backgrounds/Form\ Background.png");
+    background-size: cover;
+    background-position: initial;
+}
+
+#formSection {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.formWrapper {
+    max-width: 100%;
+    height: auto;
+    margin: 70px 20px 0px 20px;
+    padding: 20px 25px 20px 20px;
+    text-align: center;
+    background-color: white;
+    opacity: 0.7;
+    float: center;
+    vertical-align: bottom;
 }
 
 .formHeader {
